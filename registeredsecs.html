@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>2015世界互联网大会|填写信息</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/zanzhu.css">
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/formCheck.js"></script>
+</head>
+<body>
+<div class="pro-nav">
+    <div class="nav posR">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/zanzhu/logo_cj.jpg" height="68" width="315">
+            </a>
+        </div> 
+        <ul class="ue-lm">
+          <li><a href="speech.html">演讲嘉宾</a></li>
+          <li><a href="Meetingschedule.html">会议日程</a></li>
+          <li><a href="yuhuiqunti1.html">与会群体</a></li>
+          <li class="active"><a href="registeredfirst.html">我要报名</a></li>
+          <li><a href="server.html">会场服务</a></li>
+          <li><a href="contact.html">联系我们</a></li>
+        </ul>
+    </div>
+</div>         
+<div class="kbh"></div>
+<div class="pro-nav">
+    <div class="nav posR">
+        <ul class="items">
+            <li>
+                <span class="zese"></span>
+                <i class="now icon"></i>
+                <span>1</span>
+                <p class="tnow">选择类别</p>
+            </li>
+            <li>
+                <span class="zese"></span>
+                <i class="now icon"></i>
+                <span>2</span>
+                <p class="tnow">填写信息</p>
+            </li>
+            <li>
+                <span class="huise"></span>
+                <i class="no icon"></i>
+                <span>3</span>
+                <p class="tno">提交订单</p>
+            </li>
+            <li>
+                <span class="huise"></span>
+                <i class="no icon"></i>
+                <span>4</span>
+                <p class="tno">支付订单</p>
+            </li>
+            <li>
+                <span class="huise"></span>
+                <i class="no icon"></i>
+                <span>5</span>
+                <p class="tno">支付成功</p>
+            </li>
+        </ul>
+        <div class="problem">
+            <div class="wh icon"></div>
+            <a href="problem.html"><span>常见问题</span></a>
+        </div> 
+    </div>
+</div>  
+<!--注册2内容-->
+<div class="bmgm">
+    <div class="msg">
+        <h1 class="tl">请填写参会人员信息 <span>（以下均为必填项）</span></h1>
+        <div class="personnel posR">
+            <div class="hui posA"></div>
+            <div class="Lcorner posA">
+                <i class="txt">人员<span class="nums">一</span></i>
+                <div class="Lpic icon posA"></div>      
+            </div>             
+            <table class="i-table">                   
+                <tbody id="form-table">
+                    <tr>
+                        <td>你的姓名（中文）</td>
+                        <td><input type="text" dataType="/^\S/" placeholder="请正确填写，将展示在参会名牌上" class="t-em" id="names"></td>
+                    </tr>
+<!--                     <tr>
+                        <td>你的同伴（中文）</td>
+                        <td><input type="text" placeholder="请正确填写，将展示在参会名牌上" class="t-em"></td>
+                    </tr> -->
+                    <tr>
+                        <td>公司简称（中文）</td>
+                        <td><input type="text" dataType="/^[\u4e00-\u9fa5\w]{1,20}$/" placeholder="请勿超过10个汉字,将展示在参会名牌上" class="t-em" id="companys"></td>
+                    </tr>
+<!--                     <tr>
+                        <td>公司简称（英文）</td>
+                        <td><input type="text" placeholder="请勿超过20个字符,将展示在参会名牌上" class="t-em"></td>
+                    </tr> -->
+                    <tr>
+                        <td>职位（中文）</td>
+                        <td><input type="text" dataType="/^\S/" placeholder="请正确填写，将展示在参会名录上" class="t-em" id="jobs"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="i-table">                   
+                <tbody>
+<!--                     <tr>
+                        <td>职位（英文</td>
+                        <td><input type="text" placeholder="请正确填写，将展示在参会名录上" class="t-em"></td>
+                    </tr> -->
+                    <tr>
+                        <td>电子邮箱</td>
+                        <td><input type="text" dataType="/^(\w)+(\.\w+)*@(\w)+((\.\w+)+)$/" placeholder="参会确认函将发送到此邮箱" class="t-em" id="emails"></td>
+                    </tr>
+                    <tr>
+                        <td>手机</td>
+                        <td><input type="text" dataType="/^1[3|4|5|8][0-9]\d{8}$/" placeholder="用于发送通知短信" class="t-em" id="tels"></td>
+                    </tr>
+<!--                     <tr>
+                        <td>固定电话</td>
+                        <td><input type="text" placeholder="格式：020-12345678-666" class="t-em"></td>
+                    </tr> -->
+<!--                     <tr class="llw">
+                        <td>是否参加晚宴</td>
+                        <td>
+                           <div class="canjia"><label ><input type="radio"  class="radio" value="参加"  name="food">参加</label></div>
+                            <div class="canjia"><label><input type="radio" checked="checked" value="不参加"  class="radio"  name="food">不参加</label></div>
+
+                        </td>
+                    </tr> -->
+                </tbody>
+            </table>
+   <!--          <a href="registeredthr.html" id="submitButtom"><div class="Rcorner posA">填写完成</div></a> -->
+        </div>
+        <div class="personnel posR">
+            <div class="hui posA"></div>
+            <div class="Lcorner posA">
+                <i class="txt">人员<span class="nums">二</span></i>
+                <div class="Lpic icon posA"></div>      
+            </div>             
+            <table class="i-table">                   
+                <tbody id="form-table">
+                    <tr>
+                        <td>你的姓名（中文）</td>
+                        <td><input type="text" dataType="/^\S/" placeholder="请正确填写，将展示在参会名牌上" class="t-em" id="names1"></td>
+                    </tr>
+<!--                     <tr>
+                        <td>你的同伴（中文）</td>
+                        <td><input type="text" placeholder="请正确填写，将展示在参会名牌上" class="t-em"></td>
+                    </tr> -->
+                    <tr>
+                        <td>公司简称（中文）</td>
+                        <td><input type="text" dataType="/^[\u4e00-\u9fa5\w]{1,20}$/" placeholder="请勿超过10个汉字,将展示在参会名牌上" class="t-em" id="companys1"></td>
+                    </tr>
+<!--                     <tr>
+                        <td>公司简称（英文）</td>
+                        <td><input type="text" placeholder="请勿超过20个字符,将展示在参会名牌上" class="t-em"></td>
+                    </tr> -->
+                    <tr>
+                        <td>职位（中文）</td>
+                        <td><input type="text" dataType="/^\S/" placeholder="请正确填写，将展示在参会名录上" class="t-em" id="jobs1"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="i-table">                   
+                <tbody>
+<!--                     <tr>
+                        <td>职位（英文</td>
+                        <td><input type="text" placeholder="请正确填写，将展示在参会名录上" class="t-em"></td>
+                    </tr> -->
+                    <tr>
+                        <td>电子邮箱</td>
+                        <td><input type="text" dataType="/^(\w)+(\.\w+)*@(\w)+((\.\w+)+)$/" placeholder="参会确认函将发送到此邮箱" class="t-em" id="emails1"></td>
+                    </tr>
+                    <tr>
+                        <td>手机</td>
+                        <td><input type="text" dataType="/^1[3|4|5|8][0-9]\d{8}$/" placeholder="用于发送通知短信" class="t-em" id="tels1"></td>
+                    </tr>
+<!--                     <tr>
+                        <td>固定电话</td>
+                        <td><input type="text" placeholder="格式：020-12345678-666" class="t-em"></td>
+                    </tr> -->
+<!--                     <tr class="llw">
+                        <td>是否参加晚宴</td>
+                        <td>
+                           <div class="canjia"><label ><input type="radio"  class="radio" value="参加"  name="food">参加</label></div>
+                            <div class="canjia"><label><input type="radio" checked="checked" value="不参加"  class="radio"  name="food">不参加</label></div>
+
+                        </td>
+                    </tr> -->
+                </tbody>
+            </table>
+            <a href="javascript:;" id="submitButtom"><div class="Rcorner posA">填写完成</div></a>
+        </div>
+        <!--新增人员--> 
+    </div>
+   <div class="kb"></div>
+</div>
+<!--注册2内容结束-->
+<div class="footer">
+</div>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+
+$(function(){
+    $('.footer').load("foot.html");
+    var success;
+    var id = getParameter("id");
+    $("#submitButtom").on("click",function(){
+        success = checkForm("i-table");
+        if(success){
+            var url= "registeredthr.html?"
+                +"name="+$("#names").val()
+                +"&company="+$("#companys").val()
+                +"&job="+$("#jobs").val()
+                +"&Email="+$("#emails").val()
+                +"&Tel="+$("#tels").val()
+                // +"&food="+$('input[name="food"]:checked').val()
+                +"&id="+id
+                +"&name1="+$("#names1").val()
+                +"&company1="+$("#companys1").val()
+                +"&job1="+$("#jobs1").val()
+                +"&Email1="+$("#emails1").val()
+                +"&Tel1="+$("#tels1").val()
+                // +"&food="+$('input[name="food"]:checked').val()
+            window.location= url;
+        }
+    });
+    
+    var strUrl = window.location.toString();
+    var id = strUrl .substr(strUrl .lastIndexOf("id")+3,strUrl .length-strUrl .lastIndexOf("id="));
+    $("#one").val(id);
+
+
+
+//     var arr1 = ['一','二'];
+//     var num=0;
+//         $(".Lcorner").click(function(){  // add为添加input的id
+//             num++;
+//              var divTest = $(this).parent();  //获取div
+//                 if( num< arr1.length){               
+//                     var newDiv = divTest.clone(true);       
+//                     divTest.after(newDiv);
+//                     newDiv.find('.Lcorner').after( '<div class="Rpic icon posA">'+'</div>');
+//                     $(".Lcorner .nums").each(function(i){                    
+//                          $(this).html(arr1[i])        
+//                         $('.personnel:first .Rpic').hide();                            
+//                    })      
+//                    $('.Rpic').click(function(){               
+//                         $(this).parents('.personnel').hide();           
+//                     })     
+//                 }else{
+//                      newDiv = divTest.clone(false);
+//                 }
+//           })
+});
+    
+</script>
+</body>
+</html>

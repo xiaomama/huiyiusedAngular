@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>2015世界互联网大会|常见问题</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/zanzhu.css">
+</head>
+<body>
+<div class="pro-nav">
+    <div class="nav posR">
+        <div class="logo"><a href="index.html"><img src="images/zanzhu/logo_cj.png" height="68" width="315"></a></div> 
+        <ul class="ue-lm">
+          <li><a href="speech.html">演讲嘉宾</a></li>
+          <li><a href="Meetingschedule.html">会议日程</a></li>
+          <li><a href="yuhuiqunti1.html">与会群体</a></li>
+          <li class="active"><a href="registeredfirst.html">我要报名</a></li>
+          <li><a href="server.html">会场服务</a></li>
+          <li><a href="contact.html">联系我们</a></li>
+        </ul>  
+    </div>
+</div>
+<div class="kbh"></div>
+<div class="pro-nav">
+    <div class="nav posR">
+        <ul class="items">
+            <li>
+                <span class="zese"></span>
+                <i class="now icon"></i>
+                <span>1</span>
+                <p class="tnow">选择类别</p>
+            </li>
+            <li>
+                <span class="huise"></span>
+                <i class="no icon"></i>
+                <span>2</span>
+                <p class="tno">填写信息</p>
+            </li>
+            <li>
+                <span class="huise"></span>
+                <i class="no icon"></i>
+                <span>3</span>
+                <p class="tno">提交订单</p>
+            </li>
+            <li>
+                <span class="huise"></span>
+                <i class="no icon"></i>
+                <span>4</span>
+                <p class="tno">支付订单</p>
+            </li>
+            <li>
+                <span class="huise"></span>
+                <i class="no icon"></i>
+                <span>5</span>
+                <p class="tno">支付成功</p>
+            </li>
+        </ul>
+        <div class="problem">
+            <div class="wh icon"></div>
+            <a href="problem.html"><span>常见问题</span></a>
+        </div>
+    </div>
+</div> 
+<!--注册1内容-->
+<div class="bmgm">
+    <div class="top">
+        <div class="chioce">
+            <!--左报名-->
+            <div class="n-chioce mr60 active " id="left">
+                <span class="tet">个人报名</span>
+                <span class="amount">3688 元/位</span>
+                <!-- <a href="registeredsec.html"> --><span class="registration" id="btn1">立即报名</span><!-- </a> -->
+            </div>
+            <!--右报名-->
+            <div class="n-chioce" id="right">
+                <span class="tet">两人同行</span>
+                <span class="amount">6688 元/位</span>
+                <span class="registration" id="btn2">立即报名</span>
+            </div>
+        </div>
+    </div>
+    <div class="beizhu">
+        <h1>参会权益</h1>
+        <p class="m-top">参与2015年10月17-18日的会议，并享受优质服务；</p>
+        <p>享用两晚住宿含早(个人报名为大床房,两人同行为标间)，欢迎晚宴、午餐和茶歇，与业界高层充分沟通、交流；</p>
+        <p>通过会议，与嘉宾实时互动交流；</p>
+        <p>会刊及相关会议资料；</p>
+        <h1>备注:</h1>
+        <p class="m-top">门票不含与会者的交通费用；</p>
+        <p>当前价格仅适用于大陆；</p>      
+    </div>
+    <div class="kb"></div>
+</div>
+<!--注册1内容结束-->
+<div class="footer">
+</div>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script>
+    $('.footer').load("foot.html");
+$(function(){
+    var btnvalue = 0
+$("#btn1").click(function(){btnvalue=1;
+    window.location.href="registeredsec.html?id="+btnvalue;
+    });
+$("#btn2").click(function(){btnvalue=2;
+     window.location.href="registeredsecs.html?id="+btnvalue;
+ });
+
+
+    $('#left').click(function(){
+        $('#left').addClass('active');
+        $('#left').next().removeClass('active');
+        $('#left').next().find('a').replaceWith(function(){
+              return $(this).find("span");
+             })
+        // $('#left').find('.registration').wrap('<a href="registeredsec.html"></a>')
+    })
+    $('#right').click(function(){
+        $('#right').addClass('active');
+        $('#right').prev().removeClass('active');
+        $('#right').prev().find('a').replaceWith(function(){
+              return $(this).find("span");
+             })
+        // $('#right').find('.registration').wrap('<a href="registeredsec.html?id=btnvalue"></a>')
+     })
+})
+</script><script type="text/javascript" src="js/jquery-jtemplates.js"></script>
+<script type="text/javascript" src="js/myfirst.js"></script>
+<script>
+
+</script>
+<script>
+    var registedurl="/api/Member/MemberOrdersModel";
+    registedTemplate(registedurl);    
+</script>
+</body>
+</html>

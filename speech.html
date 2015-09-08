@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>2015世界互联网大会|演讲嘉宾</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/zanzhu.css">
+</head>
+<body>
+<div class="ue-bar">
+  <div class="ue-bar-warp">
+    <div class="ue-bar-logo">
+     <a href="index.html">
+        <img src="images/activity_logo.png">
+     </a>
+    </div>
+    <ul class="ue-lm">
+      <li class="active"><a href="speech.html">演讲嘉宾</a></li>
+      <li><a href="Meetingschedule.html">会议日程</a></li>
+      <li><a href="yuhuiqunti1.html">与会群体</a></li>
+      <li><a href="registeredfirst.html">我要报名</a></li>
+      <li><a href="server.html">会场服务</a></li>
+      <li><a href="contact.html">联系我们</a></li>
+    </ul>
+    <div class="language_list">
+        <i class="select_icon"></i>
+           <label class="select_language">中文</label>
+           <ul class="language_bar">
+               <li><a href="en/speech.html">English</a></li>
+               <li id="no-line"><a href="javascript:;">中文</a></li>
+           </ul>
+    </div>
+  </div>
+</div>
+<!--顶图-->
+<div class="banner">
+  <img src="images/zanzhu/yanj_top.jpg" class="lm_height">
+</div>
+<!--顶图结束-->
+<!--赞助内容-->
+<div class="bmgm">
+  <div class="msg">
+    <div class="middle">
+      <ul class="pic-person2"></ul>   
+    </div>
+    <div class="kb"></div>
+  </div>
+</div>
+<!--赞助内容结束-->
+<div class="footer">
+</div>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script>
+    $(function(){       
+        $.get("speechs.txt", function(json, textStatus) {
+            var JSON = json.speechs,
+                html = "";
+            $.each(JSON, function(key,obj){
+                  html += '<li>'+
+                                        '<a href="javascript:;">'+
+                                             '<img src="'+ obj.images +'" alt="" >'+
+                                             '<span class="word1">'+obj.name+'</span>'+
+                                             '<span class="word2">'+obj.where+'</span>'
+                                      +'</a>' +
+                                  '</li> '
+                })
+            $(".pic-person2").html(html);
+        }, 'json');
+});
+</script>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/myfirst.js"></script>
+<script>
+    $('.footer').load("foot.html");
+</script>
+</body>
+</html>

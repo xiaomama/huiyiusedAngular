@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>2015世界互联网大会|会议日程</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/reset.css">
+</head>
+<body style="background:#f6f6f6;">
+<div class="ue-bar">
+    <div class="ue-bar-warp">
+        <div class="ue-bar-logo">
+            <a href="index.html">
+                <img src="images/activity_logo.png">
+            </a>
+        </div>
+        <ul class="ue-lm">
+            <li><a href="speech.html">演讲嘉宾</a></li>
+            <li class="active"><a href="Meetingschedule.html">会议日程</a></li>
+            <li><a href="yuhuiqunti1.html">与会群体</a></li>
+            <li><a href="registeredfirst.html">我要报名</a></li>
+            <li><a href="server.html">会场服务</a></li>
+            <li><a href="contact.html">联系我们</a></li>
+        </ul>
+        <div class="language_list">
+            <i class="select_icon"></i>
+           <label class="select_language">中文</label>
+           <ul class="language_bar">
+               <li><a href="en/Meetingschedule.html">English</a></li>
+               <li id="no-line"><a href="javascript:;">中文</a></li>
+           </ul>
+        </div>
+    </div>
+</div>
+<div class="banner">
+   <img src="images/lm/lm_02.jpg" class="lm_height">
+</div>
+<div class="content_meeting">
+    <ul class="date_btn">
+        <li class="active" id="no_marginF">10月17日上午</li>
+        <li>10月17日下午</li>
+        <li>10月18日上午</li>
+        <li>10月18日下午</li>
+    </ul>
+    <div class="meeting_tab" >
+        <div class="box1 clearfix  ">
+            <span class="w_format line">10月17日上午</span>
+            <div class="right-icon">
+            <i class="icon_big"></i>
+            <span class="meeting_word1">已确认嘉宾</span> 
+            <i class="icon_big1"></i>
+            <span class="meeting_word2">确认中</span>
+            </div>
+        </div>
+        <div class="box1 clearfix hide ">
+            <span class="w_format line">10月17日下午</span>
+            <div class="right-icon">
+            <i class="icon_big"></i>
+            <span class="meeting_word1">已确认嘉宾</span> 
+            <i class="icon_big1"></i>
+            <span class="meeting_word2">确认中</span>
+            </div>
+        </div>
+        <div class="box1 clearfix hide ">
+            <span class="w_format line">10月18日上午</span>
+            <div class="right-icon">
+            <i class="icon_big"></i>
+            <span class="meeting_word1">已确认嘉宾</span> 
+            <i class="icon_big1"></i>
+            <span class="meeting_word2">确认中</span>
+            </div>
+        </div>
+        <div class="box1 clearfix hide">
+            <span class="w_format line">10月18日下午</span>
+            <div class="right-icon">
+            <i class="icon_big"></i>
+            <span class="meeting_word1">已确认嘉宾</span> 
+            <i class="icon_big1"></i>
+            <span class="meeting_word2">确认中</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+</div>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script> 
+    $('.footer').load("foot.html");
+$(function(){
+    $('.content_meeting ul li').click(function(){
+        var aLi = $('.content_meeting ul li');
+        $(this).addClass('active').siblings().removeClass('active');
+        $('.meeting_tab .box1').hide().eq(aLi.index(this)).show();
+    })
+})
+</script>
+<script src="js/jquery-1.9.1.min.js"></script> 
+<script src="js/myfirst.js"></script>
+</body>
+</html>

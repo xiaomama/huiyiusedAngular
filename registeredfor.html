@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>2015世界互联网大会|常见问题</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/zanzhu.css">
+</head>
+<body>
+<div class="heidi"></div>
+
+<div class="pro-nav">
+    <div class="nav posR">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/zanzhu/logo_cj.jpg" height="68" width="315">
+            </a>
+        </div> 
+        <ul class="ue-lm">
+          <li><a href="speech.html">演讲嘉宾</a></li>
+          <li><a href="Meetingschedule.html">会议日程</a></li>
+          <li><a href="yuhuiqunti1.html">与会群体</a></li>
+          <li class="active"><a href="registeredfirst.html">我要报名</a></li>
+          <li><a href="server.html">会场服务</a></li>
+          <li><a href="contact.html">联系我们</a></li>
+        </ul>
+    </div>
+</div>         
+<div class="kbh"></div>
+<div class="pro-nav">
+    <div class="nav posR">
+        <ul class="items">
+            <li>
+                <span class="zese"></span>
+                <i class="now icon"></i>
+                <span>1</span>
+                <p class="tnow">选择类别</p>
+            </li>
+            <li>
+                <span class="zese"></span>
+                <i class="now icon"></i>
+                <span>2</span>
+                <p class="tnow">填写信息</p>
+            </li>
+            <li>
+                <span class="zese"></span>
+                <i class="now icon"></i>
+                <span>3</span>
+                <p class="tnow">提交订单</p>
+            </li>
+            <li>
+                <span class="zese"></span>
+                <i class="now icon"></i>
+                <span>4</span>
+                <p class="tnow">支付订单</p>
+            </li>
+            <li>
+                <span class="huise"></span>
+                <i class="no icon"></i>
+                <span>5</span>
+                <p class="tno">支付成功</p>
+            </li>
+        </ul>
+        <div class="problem">
+            <div class="wh icon"></div>
+            <a href="problem.html"><span>常见问题</span></a>
+        </div> 
+    </div>
+</div>  
+<!--注册3内容-->
+<div class="bmgm">
+    <div class="msg  pad50">
+        <h1 class="tel">订单详情</h1>
+        <table class="chick">
+            <thead>
+                <tr>
+                    <th>类别</th>
+                    <th>单价</th>
+                    <th>数量</th>
+                    <th class="Rf">总和</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>参会人员</td>
+                    <td id="danjia">2580RMB</td>
+                    <td id="number">2</td>
+                    <td id="price">5160RMB</td>
+                </tr>
+                 <!-- <tr>
+
+                    <td>晚宴</td>
+                    <td>600RMB</td>
+                    <td>1</td>
+                    <td>600RMB</td>
+                </tr>
+                <tr>
+                    <td>视频</td>
+                    <td>500RMB</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr> -->
+            </tbody>
+        </table>
+        <div class="tijiao">
+            <a href="javascript:;" id="button"><span>支付订单</span></a>
+        </div>
+<!--         <div class="tiaok">
+            <label>
+                <input type="checkbox" name="" value="">           
+                <span class="mar10">我理解并同意 </span>
+                <a href="#"><span class="zi">《预订取消条款》</span></a>
+            </label>
+        </div> -->
+    </div>
+<div class="kb"></div>
+<div id="Submit"></div>
+</div>
+<!--注册3内容结束-->
+
+<div class="footer">
+</div>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/myfirst.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox.pack.js?v=2.1.5"></script>
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css?v=2.1.5" media="screen">
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/formCheck.js"></script>
+<script type="text/javascript" src="js/underscore-min.js"></script>
+
+<script type="text/javascript">
+    $('.footer').load("foot.html");
+/*与会人员表单*/
+    $.ajax({
+            type: 'get',
+            url: 'http://101.69.248.150:8001/api/Orders/GetModelById/',
+            dataType: 'json',
+            data: { 
+                id:getParameter('id')
+            },
+            success: function (data) {
+                console.log(data);
+                $("#price").html(data.Data.TotalPrice+"RMB");
+                $("#number").html(data.Data.OrderType);
+                $("#danjia").html(data.Data.TotalPrice/data.Data.OrderType+"RMB");
+            }
+        });
+
+   $("#button").on("click",function(){
+        $.ajax({
+            type: 'post',
+            url: 'http://101.69.248.150:8001/api/OrdersPay/MemberPaySubmit',
+            dataType: 'json',
+            data: { 
+                orderId:getParameter('id')
+            },
+            success: function (data) {
+                 console.log(data);
+              $("#Submit").html(data.Data);  
+            }
+        });
+   })
+
+</script>
+</body>
+</html>
+
+
+

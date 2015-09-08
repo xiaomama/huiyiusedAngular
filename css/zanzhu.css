@@ -1,0 +1,187 @@
+/*通用*/
+table .borderRed,ul  .borderRed{
+	border:1px solid red;
+}
+/*赞助合作*/
+.z-content{width:100%; margin:0 auto; overflow: hidden;  background: #fff;}
+.z-content .zzct{width: 100%; height: 396px; float: left;}
+.zzct .nr{width: 965px; height: 100%; margin: 0 auto;}
+.nr ul{width: 100%;height: 200px;  margin-top: 97px;}
+.nr ul li{width: 200px; height: 200px; margin-right: 120px; float: left; text-align: center;}
+.nr ul li .top{width: 100%;height: 54px; line-height: 54px; color: #ec586e; font-size: 48px; display: block;}
+.nr ul li .min{width: 100%; height: 97px; line-height: 97px; color: #000; display: block; }
+.nr ul li .bot{width: 100%; height: 48px; line-height: 48px; color: #fff; background: #670c6d; display: block; font-size: 16px;}
+.nr ul li .n-bot{width: 100%; height: 48px; line-height: 48px; color: #670c6d;  display: block;font-size: 16px;}
+
+.mrmy{width: 100%; height: 500px; background: #f5f5f5; float: left;}
+.mrmy .wb{width:965px; height:178px; margin:0 auto; margin-top:138px;}
+.wb img{width:170px; height:170px; display:block; float:left;}
+.wb p{width:674px;  text-indent: 2em; float:left; margin-left: 25px; color: #888888; line-height: 25px; margin-top: 49px;}
+.wb p span{float: right;  font-size: 16px; padding-right: 33px;}
+.wb .lmask{ background: url(../images/article_mask.png) no-repeat; position: absolute; left: 192px; top:18px; height: 26px; width: 39px;}
+.wb .rmask{ background: url(../images/article_mask2.png) no-repeat; position: absolute; right: 90px; top:155px; width: 39px; height: 26px; }
+.wb .rbtn-top{background: url(../images/pic_up.png) no-repeat; position: absolute;width: 40px; height: 40px; right: 18px; top:45px;}
+.wb .rbtn-bot{background: url(../images/pic_down.png) no-repeat; position: absolute;width: 40px; height: 40px; right: 18px; top:105px;}
+
+.hzhb{width: 100%; height: 1284px; float: left;background:#dbdbdb;}
+.hzhb .hb{width: 965px; height: 100%; margin: 100px  auto; }
+.hb h1{width: 100%;  text-align: center; font-size: 20px;}
+.hb h1 span{font-size: 16px;}
+.hb .hbzt{width: 922px; height: 968px;  margin: 90px auto;}
+
+
+
+
+/*常见问题*/
+.pro-nav{width: 100%; height: 88px; background:#fff;}
+.pro-nav .nav{width:1003px; height: 100%; margin: 0 auto; }
+.pro-nav .nav .logo{width: 315px; height: 68px; float: left; margin-top: 13px; }
+.pro-nav .nav .sliders{ width: 475px; height: 30px; margin-left: 145px; margin-top: 37px; float: left;}
+.pro-nav .nav .sliders li{float: left; margin-right: 22px; width: 80px; height: 30px; line-height: 30px; display: block; text-align: center; }
+.pro-nav .nav .sliders .actver { color: #76096e; background: url(../images/zanzhu/bodrer_cj.jpg) no-repeat center bottom ;}
+/*.pro-nav .nav .problem{width: 90px; height: 16px; float: left;  position: absolute; right: 10px; top:45px; line-height: 16px; font-size: 12px;}*/
+.pro-nav .nav .problem{width: 90px;height: 16px;float: right;position: relative;right: 25px;top: 45px;line-height: 16px;font-size: 12px;}
+.pro-nav .nav .problem .wh{width:26px; height: 16px; float: left; background-position: -43px -99px;}
+.pro-nav .nav .problem span{margin-left: 5px; color: #888888;}
+.kbh{width:100%; height: 6px; background:#f5f5f5;}
+.wtnr{width: 100%; height: 630px;  background:#fff;}
+.wtnr .wt{width: 965px; height: 100%; margin: 0 auto; padding-top: 80px;}
+.wtnr .wt .q-head{width: 100%; height: 25px;  display: block; cursor: pointer; position: relative;margin-bottom:50px;  font-weight: bold; }
+.q-head .now{width: 25px; height: 25px; background-position: 0px -128px; float: left;}
+.q-head .active{width: 25px; height: 25px; background-position: 0px -96px; float: left;}
+.wtnr .wt .q-head span{font-size: 16px; padding-left:20px;}
+.wtnr .wt .q-body{width: 100%; padding-left: 42px; color: #888888; margin-bottom: 50px; display:none; font-size:12px;  margin-top:-25px;}
+
+
+/*优惠*/
+.padding102{padding-top: 102px;}
+.marginB40{ margin-bottom:40px;}
+.youhui{width: 965px; margin:0 auto; background: #fff; }
+.youhui h1{ color: #000; width: 100%; font-weight: bold; font-size: 16px;}
+.youhui .weixin{display: block; width: 100%; margin-top: 22px;  color: #888888; font-size: 14px;}
+.youhui .anther{display: block; width: 100%; color: #888888; font-size: 14px;}
+.youhui .youhuima{width: 138px; height: 138px; margin: 54px 0 40px 11px;}
+.youhui .zhu{color: #ec596f;  font-size: 14px; margin-bottom: 14px;}
+.youhui .bm{display: block; margin: 89px auto; width: 220px; height: 48px; background: #670c6d; color: #fff; font-size: 18px; text-align: center; line-height: 48px;}
+
+
+/*注册1 内容*/
+.pro-nav .nav .items{width: 500px; height: 50px; margin-left: 350px; margin-top: 30px; float: left;}
+.pro-nav .nav .items li{ width: 100px; height: 50px; float: left; position: relative;}
+.pro-nav .nav .items li .zese{height: 2px;  width: 100%; position: absolute;  top: 14px; left: 0; background: #670c6d; display: block;}
+.pro-nav .nav .items li .huise{height: 2px;  width: 100%; position: absolute;  top: 14px; left: 0; background: #c9c9c9; display: block;}
+.pro-nav .nav .items li .now{ width: 25px; height: 25px; background-position: -77px -95px; position: absolute; left: 38px; top: 3px;}
+.pro-nav .nav .items li .no{ width: 25px; height: 25px; background-position: -77px -130px; position: absolute;  left: 38px; top: 3px;}
+.pro-nav .nav .items li span{ color: #fff;  position: absolute; left: 47px; top:6px;}
+.pro-nav .nav .items li .tnow{color:#5e298b; display: block; width: 100%; margin-top:31px; margin-left: 20px;}
+.pro-nav .nav .items li .tno{color:#c9c9c9; display: block; width: 100%; margin-top:31px; margin-left: 20px;}
+.bmgm{width: 100%;background: #fff; overflow: hidden;}
+.bmgm .top{width: 100%; height: 450px; background:#fff;}
+.bmgm .top .chioce{width: 965px; margin:0 auto;  height: 100%;}
+/*报名*/
+.chioce .n-chioce{width: 446px; height: 376px; float: left; border:2px solid #c9c9c9; margin-top:44px; cursor:pointer;}
+.chioce .n-chioce.mr60 {margin-right: 60px;}
+.chioce .n-chioce .tet{ width: 100%; height: 113px; line-height: 113px; font-size: 20px; font-weight: bold; text-align: center;display: block;}
+.chioce .n-chioce .amount{background: #dddddd; width: 100%; height: 100px; color: #888888; font-size:34px;text-align: center; line-height: 100px; display: block;}
+.chioce .n-chioce .registration{width: 300px; height: 60px;  background:#dddddd; color: #888888; margin-top: 80px; margin-left: 73px; display: block; line-height: 60px; font-size: 18px; text-align: center;}
+
+.chioce .active{ border:2px solid #640c6d;}
+.chioce .active .amount{background: url(../images/zanzhu/chioce.png) no-repeat;color: #fff;}
+.chioce .active .registration{background:#640c6d; color: #fff; }
+
+.beizhu{width: 965px;  height: 550px; background: #f5f5f5; margin:0 auto;}
+.beizhu h1{width: 100%; display: block; padding-top: 45px; font-weight:  bold; font-size: 20px; padding-left: 60px;  }
+.beizhu p{background: url(../images/zanzhu/dian.png) left center no-repeat; color: #888888; padding-left:6px; margin-left:60px; margin-bottom: 11px; }
+.beizhu .m-top{ margin-top:28px; }
+.bmgm .kb{height:50px;overflow: hidden}
+.edit,.delete{cursor:pointer;}
+
+
+/*注册2*/
+
+.bmgm .msg{width: 965px; height: 100%; background: #fff; margin:0 auto; overflow: hidden;}
+.msg .tl{display: block; width: 100%; font-size: 18px; padding-top:44px; }
+.msg .tl span{ color: #bbbbbb; font-size: 14px;}
+.personnel{width: 963px; height: 420px; border:1px solid #c9c9c9; margin-top: 60px;}
+.personnel .Lcorner{width: 120px; height: 40px; top:0; left: 0; background: url(../images/zanzhu/tx.png) no-repeat; }
+.Lcorner .txt{color: #fff;padding-left: 10px; line-height: 40px; font-size: 14px;}
+.Lcorner span{color: #fff;line-height: 40px; font-size: 14px;}
+.personnel .Lpic{background-position: -117px -96px; width: 22px; height: 22px; top:9px; left:75px;}
+.personnel .i-table{width: 472px; height:349px; cellpadding:0; cellpadding:0; margin-top: 40px; float: left; margin-left: 9px;}
+.personnel .i-table td{text-align: center; font-size: 16px;}
+.personnel .i-table input{width: 250px; height: 40px;  font-size: 13px;  float: left;text-indent: 0.5em;}
+.personnel .Rcorner{width: 120px; height: 40px; background:url(../images/zanzhu/wc.png) no-repeat; color: #fff; text-align: center; line-height: 40px; bottom: 0; right: 0;}
+.personnel .Rpic{background-position: -117px -131px; width: 22px; height: 22px; right: 10px; top:10px;}
+.personnel .canjia{width: 50%; height: 100%; float: left; text-align: left; line-height: 100%; padding-top: 18%; vertical-align:middle;}
+.personnel .canjia label{font-size: 16px;}
+.personnel .canjia label input{width: 16px; height:16px; vertical-align:middle;}
+.personnel .hui{height: 349px; width: 1px; background:#dddddd; top:40px; left: 475px;}
+
+
+/*注册3*/
+.pad50{padding-top: 50px;}
+.pad50 .tel{width: 100%; display: block;font-size: 18px; font-weight: bold; margin-bottom: 30px;}
+.pad50 .chick{width: 100%; height: 124px;  border-left:1px solid #c9c9c9; }
+.pad50 .chick thead{background: #c9c9c9;}
+.pad50 .chick th{height: 40px;  text-align: center; line-height: 40px; border-right: 1px solid #fff;}
+.pad50 .chick td{text-align: center; line-height: 100%; border-top:1px solid #c9c9c9; border-right:1px solid #c9c9c9; border-bottom:1px solid #c9c9c9; height: 40px; line-height: 40px;}
+.pad50 .chick .Rf{border-right: 1px solid #c9c9c9;}
+.add{width: 960px; text-align: right;  margin-bottom: 90px; margin-top:10px; float: right;}
+.add a{ margin-right: 5px;color: #5e298b; line-height:20px;display: inline-block; height: 20px; vertical-align:middle; cursor: pointer;}
+.add .jia{background-position: -117px -163px; width: 20px; height:20px;  display: inline-block; vertical-align:middle; }
+.heidi{width: 100%; height: 100%; position: fixed; background: #000; opacity: 0.6; top: 0; left: 0;z-index: 999; display: none;}
+#tanchu{ width: 965px; height: 422px; display: none; z-index: 9999; background: #fff;  }
+
+
+.ys-video{width:903px; height: 65px; border:1px solid #c9c9c9; padding:35px 0 0 60px; margin-bottom: 50px;}
+.ys-video input{vertical-align:middle;}
+.mar10{margin-left: 3px; font-size: 16px; }
+.mar30{margin-left:30px;}
+.yel{color:#bbbbbb;}
+.ys-video .tao{width: 100px; height: 30px; background: #fff; margin-left: 70px;}
+
+.set{width: 963px; border:1px solid #c9c9c9; margin-bottom: 50px;}
+.set .le{width: 115px; height: 360px; float: left;}
+.set .le ul{margin-top: 42px; width: 115px;}
+.set .le ul li{width: 115px; height: 15px; text-align: right; margin-bottom: 35px;}
+.set .re{width: 815px; margin-bottom: 20px; float: left; margin-left: 30px;}
+.set .re ul{margin-top: 42px; width: 845px;}
+.set .re ul li{width: 815px; height: 35px; text-align: left; margin-bottom: 15px;}
+.fx{color: #e40000; font-size: 16px; margin-left: 5px; line-height: 35px;}
+.set .re .tet{width: 583px; line-height:28px;  text-indent:0.5em;}
+.set .dq{width: 76px; height: 28px; border:1px solid #c9c9c9; float: left; line-height: 28px; font-size: 14px; padding-left: 12px; }
+.set .dq .san{background-position:-152px -99px; width:8px; height: 6px;  right: 6px; top:11px;}
+.set .hui{color:#c9c9c9; font-size: 14px; }
+
+.pay{width: 963px; height: 148px; border:1px solid #c9c9c9; margin-bottom: 50px;}
+.pay span{font-size: 16px;}
+.pay .t-way{width: 900px; margin: 42px 0 0 58px; }
+.pay input{vertical-align: middle; }
+.pay .discount{width: 900px; margin: 20px 0 0 58px;}
+.pay .hui{color: #bbbbbb; font-size: 14px;}
+.mar15{margin-left: 25px;}
+
+.tijiao{width: 963px; margin-bottom: 30px; margin-top: 90px; }
+.tijiao span{background: url(../images/zanzhu/registeredthr.png) no-repeat; margin:0 auto;  width:600px; height: 60px; line-height: 60px;  color: #fff; font-size: 18px; display: block; text-align: center;}
+
+.tiaok{width: 965px; color:#bbbbbb; padding-left: 182px; }
+.tiaok .zi{color: #612b8f;font-size: 16px;}
+
+.f-cobo{color:#000; border:1px solid #76096e; text-indent:0.5em;}
+.b-cobo{color:#000; border:1px solid #c9c9c9; }
+
+
+/*注册4*/
+.zfcg{width: 100%; overflow: hidden; margin-bottom: 30px; }
+.zfcg .lp{width: 282px; height: 167px;}
+
+
+
+/*与会群体*/
+
+.par-tet{padding-top:132px;text-indent: 2em; color: #888888; display: block;}
+.invoiceBox lable {
+	display: inline-block;
+	width:100px;
+	font-size: 16px;
+}

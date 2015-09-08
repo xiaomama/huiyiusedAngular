@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>2015世界互联网大会|常见问题</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/zanzhu.css">
+</head>
+<body>
+<div class="pro-nav">
+    <div class="nav posR">
+        <div class="logo"><a href="index.html"><img src="images/zanzhu/logo_cj.jpg" height="68" width="315"></a></div>         
+        <ul class="sliders">
+            <li><a href="problem.html">演讲及日程</a></li>
+            <li><a href="problemPay.html">报名及付费</a></li>
+            <li><a href="problemService.html">会场服务</a></li>
+            <li  class="actver">现场注册</li>
+        </ul>
+        <div class="problem">
+            <div class="wh icon"></div>
+            <a href="problem.html"><span>常见问题</span></a>
+        </div> 
+    </div>
+</div>
+<div class="kbh"></div>
+<!--常见问题内容-->
+<div class="wtnr">
+    <div class="wt">
+        <!--1-->
+        <div class="q-head">
+            <div class="now icon"></div>
+            <span>论坛邀请了哪些领域的嘉宾?</span>  
+        </div>
+        <div class="q-body">
+            作为旅游业的高端盛会，主办方邀请了超过40位来自全球旅游业的高层作为演讲嘉宾。他们来自于国内外智慧旅游、休闲旅游、自驾旅游等集团。
+        </div>
+        <!--2-->
+        <div class="q-head">
+            <div class="now icon"></div>
+            <span>我希望上台演讲，如何申请?</span>  
+        </div>
+        <div class="q-body">
+            作为旅游业的高端盛会，主办方邀请了超过40位来自全球旅游业的高层作为演讲嘉宾。他们来自于国内外智慧旅游、休闲旅游、自驾旅游等集团。
+        </div>
+        <!--3-->
+        <div class="q-head">
+            <div class="now icon"></div>
+            <span>演讲是讲中文还是英文</span>  
+        </div>
+        <div class="q-body">
+            作为旅游业的高端盛会，主办方邀请了超过40位来自全球旅游业的高层作为演讲嘉宾。他们来自于国内外智慧旅游、休闲旅游、自驾旅游等集团。
+        </div>
+        <!--4-->
+        <div class="q-head">
+            <div class="now icon"></div>
+            <span>可以获得演讲嘉宾的联系方式吗?</span>  
+        </div>
+        <div class="q-body">
+            作为旅游业的高端盛会，主办方邀请了超过40位来自全球旅游业的高层作为演讲嘉宾。他们来自于国内外智慧旅游、休闲旅游、自驾旅游等集团。
+        </div>
+        <!--5-->
+        <div class="q-head">
+            <div class="now icon"></div>
+            <span>论坛的组织形式如何了?</span>  
+        </div>
+        <div class="q-body">
+            作为旅游业的高端盛会，主办方邀请了超过40位来自全球旅游业的高层作为演讲嘉宾。他们来自于国内外智慧旅游、休闲旅游、自驾旅游等集团。
+        </div>
+        <!--6-->
+        <div class="q-head">
+            <div class="now icon"></div>
+            <span>会议日程确定了吗?</span>  
+        </div>
+        <div class="q-body">
+            作为旅游业的高端盛会，主办方邀请了超过40位来自全球旅游业的高层作为演讲嘉宾。他们来自于国内外智慧旅游、休闲旅游、自驾旅游等集团。
+        </div>
+        <!--7-->
+        <div class="q-head">
+            <div class="now icon"></div>
+            <span>能否得到演讲的资料呢?</span>  
+        </div>
+        <div class="q-body">
+            作为旅游业的高端盛会，主办方邀请了超过40位来自全球旅游业的高层作为演讲嘉宾。他们来自于国内外智慧旅游、休闲旅游、自驾旅游等集团。
+        </div>
+    </div>
+</div>
+<!--赞助内容结束-->
+<div class="footer">
+</div>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script>
+    $('.footer').load("foot.html");
+$(function(){
+    $('.q-head').click(function(){
+        var _index = $(this);
+        if(_index.find(".now").hasClass("active")){
+            _index.find('.now').removeClass('active');
+          _index.next('.q-body').slideToggle(300);
+        }
+        else{
+            _index.find('.now').addClass('active');
+            _index.next('.q-body').slideToggle(300);
+             $(".q-body").not($(_index).next(".q-body")).slideUp(300);
+            $('.now').not($(_index).find('.now')).removeClass('active');
+           }
+    })
+  $(".q-head").eq(0).trigger('click');   //加载后，就模拟事件触发第一条  
+})
+</script>
+</body>
+</html>

@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>2015世界互联网大会|常见问题</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/zanzhu.css">
+</head>
+<body>
+<div class="heidi"></div>
+
+<div class="pro-nav">
+    <div class="nav posR">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/zanzhu/logo_cj.jpg" height="68" width="315">
+            </a>
+        </div> 
+        <ul class="ue-lm">
+          <li><a href="speech.html">演讲嘉宾</a></li>
+          <li><a href="Meetingschedule.html">会议日程</a></li>
+          <li><a href="yuhuiqunti1.html">与会群体</a></li>
+          <li class="active"><a href="registeredfirst.html">我要报名</a></li>
+          <li><a href="server.html">会场服务</a></li>
+          <li><a href="contact.html">联系我们</a></li>
+        </ul>
+    </div>
+</div>         
+<div class="kbh"></div>
+<div class="pro-nav">
+    <div class="nav posR">
+        <ul class="items">
+            <li>
+                <span class="zese"></span>
+                <i class="now icon"></i>
+                <span>1</span>
+                <p class="tnow">选择类别</p>
+            </li>
+            <li>
+                <span class="zese"></span>
+                <i class="now icon"></i>
+                <span>2</span>
+                <p class="tnow">填写信息</p>
+            </li>
+            <li>
+                <span class="zese"></span>
+                <i class="now icon"></i>
+                <span>3</span>
+                <p class="tnow">提交订单</p>
+            </li>
+            <li>
+                <span class="huise"></span>
+                <i class="no icon"></i>
+                <span>4</span>
+                <p class="tno">支付订单</p>
+            </li>
+            <li>
+                <span class="huise"></span>
+                <i class="no icon"></i>
+                <span>4</span>
+                <p class="tno">支付成功</p>
+            </li>
+        </ul>
+        <div class="problem">
+            <div class="wh icon"></div>
+            <a href="problem.html"><span>常见问题</span></a>
+        </div> 
+    </div>
+</div>  
+<!--注册3内容-->
+<div class="bmgm">
+    <div class="msg  pad50">
+        <div id="tanchu">
+        <div class="personnel posR" style="margin-top:0px;">
+                <div class="hui posA"></div>
+                <div class="Lcorner posA">
+                    <i class="txt">人员<span class="nums">一</span></i>
+                    <div class="Lpic icon posA"></div>               
+                </div>
+                <table class="i-table">                   
+                    <tbody>
+                        <tr>
+                            <td>姓名（中文）</td>
+                            <td><input id="names" type="text" dataType="/^\S/" placeholder="请正确填写，将展示在参会名牌上" value=""></td>
+                        </tr>
+                        <tr>
+                            <td>公司简称（中文）</td>
+                            <td><input type="text" id="companys" dataType="/^\S/" placeholder="请勿超过10个汉字,将展示在参会名牌上" value=""></td>
+                        </tr>
+                        <tr>
+                            <td>职位（中文）</td>
+                            <td><input type="text" id="jobs" dataType="/^\S/" placeholder="请正确填写，将展示在参会名录上" value=""></td>
+                        </tr>
+                    </tbody>
+                </table>
+                    <table class="i-table">                   
+                    <tbody>
+                        <tr>
+                            <td>电子邮箱</td>
+                            <td><input id="emails" dataType="/^(\w)+(\.\w+)*@(\w)+((\.\w+)+)$/" type="text" placeholder="参会确认函将发送到此邮箱" value=""></td>
+                        </tr>
+                        <tr>
+                            <td>手机</td>
+                            <td><input type="text" id="tels" dataType="/^1[3|4|5|8][0-9]\d{8}$/" placeholder="用于发送通知短信" value=""></td>
+                        </tr>
+                        <!-- <tr>
+                            <td>是否参加晚宴</td>
+                            <td>
+                                <div class="canjia"><label ><input type="radio" id="attend" class="radio" value="参加"  name="food">参加</label></div>
+                                <div class="canjia"><label><input type="radio" checked="checked" value="不参加"  class="radio"  name="food">不参加</label></div>
+                            </td>
+                        </tr> -->
+                        </tbody>
+                    </table>
+                    <div class="Rcorner posA">填写完成</div>
+            </div>
+    </div>
+
+
+
+        <h1 class="tel">核对人员信息</h1>
+        <table class="chick">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>姓名</th>
+                    <th>公司</th>
+                    <th>职位</th>
+                    <th>手机</th>
+                    <th>邮箱</th>
+                   <!--  <th>晚宴</th> -->
+                    <th>更多操作</th>
+                    <th class="Rf">联系人</th>
+                </tr>
+            </thead>
+            <tbody id="fromTable2">
+            </tbody>
+        </table>
+        <div class="add">
+            <!-- <a href="#tanchu" id="showdiv">添加一位参会人员</a>
+            <b class="jia icon"></b> -->
+        </div>
+       <!--  <h1 class="tel">是否购买会议视频</h1>
+        <div class="ys-video"> 
+            <label>
+                <input id="buyVideo" type="checkbox">
+                <span class="mar10">购买</span>
+            </label>  
+            <input type="text" id="videoNumber" value="" class="tao">
+            <span class="mar10 yel">请输入需要的量，500元/套，支付后一般情况下会在5周内送达。</span>
+        </div> -->
+        <h1 class="tel">发票信息</h1>
+        <div class="set clearfix">
+            <div  class="re invoiceBox">  
+                <ul>
+                     <li>
+                        <lable>发票内容</lable>
+                        <input type="radio" checked="checked" name="invoice" value="0">
+                        <span class="mar10">会议费</span>
+                        <input type="radio" name="invoice" value="1" class="mar30">
+                        <span class="mar10">信息技术咨询服务费</span>
+                        <input type="radio" name="invoice" value="2" class="mar30">
+                        <span class="mar10">展览服务费</span>
+                        <input type="radio" name="invoice" value="3" class="mar30">
+                        <span class="mar10">我不需要发票</span>
+                        <b class="fx">*</b>
+                    </li>
+                    <li>
+                        <lable>发票抬头</lable>
+                        <input type="text" id="invoiceTitle" dataType="/^\S/"  class="tet">
+                        <b class="fx">*</b>
+                    </li>
+                    <li>
+                         <lable>省市地区</lable>
+                        <select id="provinces"></select>
+                        <select id="city"></select>
+                        <b class="fx">*</b>
+                    </li>
+                    <li>
+                         <lable>邮寄地址</lable>
+                        <input id="invoiceAddress" type="text" dataType="/^\S/" placeholder="填写完整，以便我们邮寄发票" class="tet hui">
+                        <b class="fx">*</b>
+                    </li>
+                    <li>
+                         <lable>邮政编码</lable>
+                        <input type="text" id="invoicePost" dataType="/^[1-9]\d{5}(?!\d)/" >
+                        <b class="fx">*</b>
+                    </li>
+                    <li>
+                         <lable>备注</lable>
+                        <input id="invoiceMarks" type="text" >
+                    </li>
+                </ul>
+            </div>
+        </div>
+         <h1 class="tel">支付信息</h1>
+        <div class="pay">
+            <div class="t-way">                
+                    <span>支付方法</span>
+                 <label>
+                    <input type="checkbox" checked="checked"  class="mar10">                
+                    <span>支付宝付款</span>
+                </label>
+            </div>
+            <!-- <div class="discount">
+                <span>优惠码</span>
+                <input type="text" class="mar15">
+                <span class="hui mar10">如何获得优惠码？</span>
+            </div> -->
+        </div>
+       
+        <div class="tijiao">
+            <a href="javascript:;" id="button"><span>提交订单</span></a>
+        </div>
+<!--         <div class="tiaok">
+            <label>
+                <input type="checkbox" name="" value="">           
+                <span class="mar10">我理解并同意 </span>
+                <a href="#"><span class="zi">《预订取消条款》</span></a>
+            </label>
+        </div> -->
+    </div>
+<div class="kb"></div>
+</div>
+<!--注册3内容结束-->
+
+<div class="footer">
+</div>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/myfirst.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox.pack.js?v=2.1.5"></script>
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css?v=2.1.5" media="screen">
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/formCheck.js"></script>
+<script type="text/javascript" src="js/underscore-min.js"></script>
+<script type="text/javascript" src="js/json2.js"></script>
+<script type="text/javascript" src="js/registerForm.js"></script>
+<script type="text/javascript" src="js/provincesdata.js"></script>
+
+<script type="text/javascript">
+    $('.footer').load("foot.html");
+/*与会人员表单*/
+       var edited = '';
+       function emptyForm(){
+            $("#names").val("");
+             $("#companys").val("");
+             $("#jobs").val("");
+            $("#emails").val("");
+            $("#tels").val("");
+       }
+    function editPeople(){
+        $("#names").val(edited.find('.name').html());
+        $("#companys").val(edited.find('.companys').html());
+        $("#jobs").val(edited.find('.jobs').html());
+        $("#emails").val(edited.find('.Emails').html());
+        $("#tels").val(edited.find('.Tels').html());
+        if(edited.find('.food').html()=="参加"){
+            $("#attend").checked = "checked";
+        }
+    }
+    $(document).on("click",'.delete',function(){
+        var deleted = $(this).parents('tr');
+        deleted.remove();
+    })
+   $(document).on("click",'.edit',function(){
+    edited = $(this).parents('tr');
+    $.fancybox.open("#tanchu",{
+        'afterShow' : function(){
+            if(edited!=0){
+                editPeople();
+            }
+        },
+        'afterClose' : function(){
+            console.log(1);
+            edited=0;
+            emptyForm();
+        }
+    });
+
+   })
+    $('#showdiv').fancybox({
+        'afterShow' : function(){
+            edited=0;
+        },
+        'afterClose' : function(){
+            console.log(2);
+            edited=0;
+        }
+    });
+    var data = {
+        name : getParameter("name"),
+        id : getParameter("id"),
+        company : getParameter("company"),
+        job : getParameter("job"),
+        Email : getParameter("Email"),
+        Tel : getParameter("Tel"),
+        food: getParameter("food")
+    }
+
+   var people = "<tr><td>参会人员</td><td class='name'><%- data.name %></td><td class='companys'><%- data.company %></td><td class='jobs'><%- data.job %></td><td class='Tels'><%- data.Tel %></td><td class='Emails'><%- data.Email %></td><td><span class='edit'>编辑</span></td><td><input type='radio' value='1' class='contact' name='contact'></td></tr>";
+   var addPeople = _.template(people, data);
+   $("#fromTable2").append(addPeople);
+   $(".contact").attr("checked","checked");
+   if(getParameter("name1")!=""){
+        data = {
+        name : getParameter("name1"),
+        id : getParameter("id"),
+        company : getParameter("company1"),
+        job : getParameter("job1"),
+        Email : getParameter("Email1"),
+        Tel : getParameter("Tel1"),
+        food: getParameter("food1")
+       }
+       addPeople = _.template(people, data);
+       $("#fromTable2").append(addPeople);
+   }
+
+   /*与会人员表单验证*/
+   /*获取表单数据*/
+
+   var success;      //添加与会人员表单验证成功
+/*添加人员Dom*/
+function addTable(){
+    var food = $('input[name="food"]:checked').val();
+             data = {
+                name : $("#names").val(),
+                company : $("#companys").val(),
+                job : $("#jobs").val(),
+                Email : $("#emails").val(),
+                Tel : $("#tels").val(),
+                food: food
+            }
+            var addPeople = _.template(people, data);
+            $("#fromTable2").append(addPeople);
+            emptyForm();
+            $.fancybox.close();
+}
+   $(".Rcorner").on("click",function(){
+        success = checkForm("personnel");   //与会人员表单验证
+        if(success){
+            if(edited==0){
+                addTable();
+            }else{
+                var food = $('input[name="food"]:checked').val();
+                edited.find('.name').html($("#names").val());
+                edited.find('.companys').html($("#companys").val());
+                edited.find('.jobs').html($("#jobs").val());
+                edited.find('.Emails').html($("#emails").val());
+                edited.find('.Tels').html($("#tels").val());
+                edited.find('.food').html(food); 
+                edited=0;
+                $.fancybox.close();
+            }
+            
+        }else{
+        }
+   })
+var alldata = {
+formDataMember:[],
+formDataOrders:[]
+
+}
+
+$(function () {
+    function postForm(){
+        var DinnerNum=0;
+        for(i=0;i<$("#fromTable2 tr").length;i++){
+            var _this = $("#fromTable2 tr:eq("+i+")");
+            var IsLinkPerson =0;
+            var IsAttendDinner=0;
+            if(_this.find(".contact:eq(0)").is(":checked")){
+                var IsLinkPerson =1;
+            }
+            if(_this.find(".food:eq(0)").html()=="参加"){
+                var IsAttendDinner =1;
+                DinnerNum += 1;
+            }
+            
+            alldata.formDataMember[i]={
+                "IsLinkPerson":IsLinkPerson,//是否是联系人
+                "ChName":_this.find(".name").html(),
+                "ChCompanyName":_this.find(".companys").html(),
+                "ChPosition":_this.find(".jobs").html(),
+                "MemberType":1,
+                "Email":_this.find(".Emails").html(),
+                "MobilePhone":_this.find(".Tels").html(),
+                "IsAttendDinner":IsAttendDinner
+            }
+        }
+        //发票晚宴总数与会人数
+        var VideoNum = 0;
+        if($("#buyVideo").is(":checked")){
+            VideoNum = $("#videoNumber").val();
+        }
+        var val=$('input:radio[name="invoice"]:checked').val();
+        var IsPrintInvoice=1;
+        var InvoiceTitle;
+        var InvoiceContent='',
+            InvoiceTitle='',
+            Address='',
+            PostCode='',
+            Marks='';
+        if(val==3){
+            IsPrintInvoice = 0;
+        }else{
+            var invoiceStr = ['会议费','信息技术咨询服务费','展览服务费'];
+            InvoiceContent = invoiceStr[val];
+            InvoiceTitle = $("#invoiceTitle").val();//发票抬头
+            Address = $("#invoiceAddress").val();//发票邮寄地址
+            PostCode = $("#invoicePost").val();//邮政编码
+            Marks = $("#invoiceMarks").val();//备注
+        }
+        
+        alldata.formDataOrders[0]={
+            "OrderType":getParameter("id"),//订单类型 1 国内、2国外
+            "VideoNum":VideoNum,//购买视频数量
+            "VideoPrice":500.00*VideoNum,
+            "MemberNum":$("#fromTable2 tr").length,//参会人员数量
+            //"MemberPrice":2850.00,
+            "DinnerNum":DinnerNum,//参加晚宴人员数量
+            //"DinnerPrice":300.00*DinnerNum,
+            //"TotalPrice":3650.00,
+            "IsPrintInvoice":IsPrintInvoice,//是否打印发票 0 否 1是
+            "InvoiceContent":InvoiceContent,//发票内容
+            "InvoiceTitle":InvoiceTitle,//发票抬头
+            "Address":Address,//发票邮寄地址
+            "PostCode":PostCode,//邮政编码
+            "Marks":Marks//备注
+        }
+        console.log(JSON.stringify(alldata.formDataMember));
+
+        $.ajax({
+            type: 'post',
+            url: 'http://101.69.248.150:8001/api/Member/MemberOrdersModel',
+            dataType: 'json',
+            data: { formDataMember: JSON.stringify(alldata.formDataMember), formDataOrders: JSON.stringify(alldata.formDataOrders) },
+            success: function (data) {
+                console.log(data);
+                if(data.Flag){
+                    window.location="registeredfor.html?id="+data.Data;
+                }else{
+                    alert("创建订单失败")
+                }
+            }
+        });
+    }
+    $("#button").on("click", function () {
+        if($("#fromTable2 tr").length<1){
+            alert("与会人员不能为空，请添加与会人员")
+        }else if($('input:radio[name="contact"]:checked').val()==null){
+                alert("请选择一个联系人");
+            }else{
+                var up = checkForm("invoiceBox");
+                if(up){
+                postForm()
+            }  
+        }
+        
+    })
+});
+
+</script>
+</body>
+</html>
+
+
+

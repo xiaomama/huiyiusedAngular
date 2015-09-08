@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>2015世界互联网大会|常见问题</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/zanzhu.css">
+</head>
+<body>
+<div class="pro-nav">
+    <div class="nav posR">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/zanzhu/logo_cj.jpg" height="68" width="315">
+            </a>
+        </div> 
+        <ul class="ue-lm">
+          <li><a href="speech.html">演讲嘉宾</a></li>
+          <li><a href="Meetingschedule.html">会议日程</a></li>
+          <li><a href="yuhuiqunti1.html">与会群体</a></li>
+          <li class="active"><a href="registeredfirst.html">我要报名</a></li>
+          <li><a href="server.html">会场服务</a></li>
+          <li><a href="contact.html">联系我们</a></li>
+        </ul>
+    </div>
+</div>         
+<div class="kbh"></div>
+<div class="pro-nav">
+    <div class="nav posR">
+        <ul class="items">
+            <li>
+                <span class="zese"></span>
+                <i class="now icon"></i>
+                <span>1</span>
+                <p class="tnow">选择类别</p>
+            </li>
+            <li>
+                <span class="zese"></span>
+                <i class="now icon"></i>
+                <span>2</span>
+                <p class="tnow">填写信息</p>
+            </li>
+            <li>
+                <span class="zese"></span>
+                <i class="now icon"></i>
+                <span>3</span>
+                <p class="tnow">提交订单</p>
+            </li>
+            <li>
+                <span class="zese"></span>
+                <i class="now icon"></i>
+                <span>4</span>
+                <p class="tnow">支付订单</p>
+            </li>
+            <li>
+                <span class="zese"></span>
+                <i class="now icon"></i>
+                <span>5</span>
+                <p class="tnow">支付成功</p>
+            </li>
+        </ul>
+        <div class="problem">
+            <div class="wh icon"></div>
+            <a href="problem.html"><span>常见问题</span></a>
+        </div> 
+    </div>
+</div>  
+<!--注册3内容-->
+<div class="bmgm">
+    <div class="msg  pad50">
+        <div class="zfcg">
+            <div class="lp left">
+                <img src="images/zanzhu/zfcg.jpg" height="167" width="282">
+            </div>
+            <div class="lp right">
+                <img src="images/zanzhu/dhlx.jpg" height="167" width="282">
+            </div>
+        </div>
+        <h1 class="tel">订单详情</h1>
+        <table class="chick">
+            <thead>
+                <tr>
+                    <th>类别</th>
+                    <th>单价</th>
+                    <th>数量</th>
+                    <th class="Rf">总和</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>参会人员</td>
+                    <td id="danjia">2580RMB</td>
+                    <td id="number">2</td>
+                    <td id="price">5160RMB</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="kb"></div>
+</div>
+<!--注册3内容结束-->
+<div class="footer">
+</div>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script>
+    $('.footer').load("foot.html");
+        $.ajax({
+            type: 'get',
+            url: 'http://101.69.248.150:8001/api/Orders/GetModelById/',
+            dataType: 'json',
+            data: { 
+                id:getParameter('Id')
+            },
+            success: function (data) {
+                console.log(data);
+                $("#price").html(data.Data.TotalPrice);
+                $("#number").html(data.Data.OrderType);
+                $("#danjia").html(data.Data.TotalPrice/data.Data.OrderType);
+            }
+        });
+
+</script>
+</body>
+</html>
+
+
+
