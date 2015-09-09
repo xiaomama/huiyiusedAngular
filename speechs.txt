@@ -2,25 +2,25 @@
     {
 	"images":"images/yjjb/yj_11.png",
 	"name":"徐京",
-	"ename":"Mr.Jing Xu",
+	"ename":"Jing Xu",
 	"ewhere":"Director of the Asia-Pacific UNWTO",
 	"where":"联合国世界旅游组织亚太部主任"	
 	},{
 	"images":"images/yjjb/yj_44.png",
 	"name":"John Koldowski",
-	"ename":"Mr.John Koldowski",
+	"ename":"John Koldowski",
 	"ewhere":"Special Advisor to the CEO",
 	"where":"亚太旅游协会副主席"	
 	},{
 	"images":"images/yjjb/yj_40.png",
 	"name":"王晓峰",
-	"ename":"Mr.Xiaofeng Wang",
+	"ename":"Xiaofeng Wang",
 	"ewhere":"Vice-Chairman of China National Tourism Administration",
 	"where":"国家旅游局副局长"	
 	},{
 	"images":"images/yjjb/yj_41.png",
 	"name":"王凤武",
-	"ename":"Mr.Fengwu Wang",
+	"ename":"Fengwu Wang",
 	"ewhere":"Chairman of China Tourist Attraction Association",
 	"where":"中国风景名胜区协会会长"	
 	},{
@@ -58,48 +58,42 @@
 	"name":"周玲强",
 	"ename":"Professor Lingqiang Zhou",
 	"ewhere":"School of Management,  <br/>Zhejiang University",
-	"where":"浙江大学管理学院教授"	
+	"where":"浙江大学旅游学院院长"	
 	},{
 	"images":"images/yjjb/yj_4.png",
 	"name":"贲圣林",
 	"ename":"Professor Ben Shenglin",
 	"ewhere":"School of Management,  <br/>Zhejiang University",
-	"where":"浙江大学互联网与创新金融<br/>研究中心主任,教授"	
+	"where":"浙江大学互联网与创新金融<br/>研究中心主任"	
 	},{
 	"images":"images/yjjb/yj_30.png",
 	"name":"彭蕾",
-	"ename":"Ms.Lei Peng",
-	"ewhere":"Executive president, Ant King service",
+	"ename":"Xiaofeng Wang",
+	"ewhere":"Vice-Chairman of China National Tourism Administration",
 	"where":"执行总裁，蚂蚁金服"	
 	},{
 	"images":"images/yjjb/yj_39.png",
 	"name":"吴志祥",
-	"ename":"Mr.Zhixiang Wu",
+	"ename":"Zhixiang Wu",
 	"ewhere":"Ly.com CEO",
 	"where":"同程旅游CEO"	
 	},{
 	"images":"images/yjjb/yj_36.png",
 	"name":"洪清华",
-	"ename":"Mr.Qinghua Hong",
+	"ename":"Qinghua Hong",
 	"ewhere":"Lvmama.com Founder",
 	"where":"景域集团董事长、驴妈妈创始人"	
 	},{
 	"images":"images/yjjb/yj_38.png",
 	"name":"王奕",
-	"ename":"Mr.Kevin Wang",
+	"ename":"Kevin Wang",
 	"ewhere":"General Manager of Greater China and North Asia, Google Travel",
-	"where":"Google Travel大中华区<br/>及北亚总经理"	
+	"where":"Google Travel大中华区及北亚总经理"	
 	},{
 	"images":"images/yjjb/yj_43.png",
 	"name":"罗军",
-	"ename":"Mr.Luo Jun",
+	"ename":"Luo Jun",
 	"ewhere":"CEO, tujia.com",
 	"where":"途家网CEO"	
-	},{
-	"images":"images/yjjb/add.png",
-	"name":"添加中",
-	"ename":"To be continuted",
-	"ewhere":"Zhejiang Zhuo Rui",
-	"where":"浙江卓锐"	
 	}]
 }

@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>2015世界互联网大会|常见问题</title>
+    <title>常见问题</title>
     <link type="text/css" rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/zanzhu.css">
@@ -84,12 +84,11 @@
             <tbody>
                 <tr>
                     <td>参会人员</td>
-                    <td id="danjia">2580RMB</td>
-                    <td id="number">2</td>
-                    <td id="price">5160RMB</td>
+                    <td>2580RMB</td>
+                    <td>2</td>
+                    <td>5160RMB</td>
                 </tr>
-                 <!-- <tr>
-
+                 <tr>
                     <td>晚宴</td>
                     <td>600RMB</td>
                     <td>1</td>
@@ -100,19 +99,19 @@
                     <td>500RMB</td>
                     <td>0</td>
                     <td>0</td>
-                </tr> -->
+                </tr>
             </tbody>
         </table>
         <div class="tijiao">
             <a href="javascript:;" id="button"><span>支付订单</span></a>
         </div>
-<!--         <div class="tiaok">
+        <div class="tiaok">
             <label>
                 <input type="checkbox" name="" value="">           
                 <span class="mar10">我理解并同意 </span>
                 <a href="#"><span class="zi">《预订取消条款》</span></a>
             </label>
-        </div> -->
+        </div>
     </div>
 <div class="kb"></div>
 <div id="Submit"></div>
@@ -141,9 +140,6 @@
             },
             success: function (data) {
                 console.log(data);
-                $("#price").html(data.Data.TotalPrice+"RMB");
-                $("#number").html(data.Data.OrderType);
-                $("#danjia").html(data.Data.TotalPrice/data.Data.OrderType+"RMB");
             }
         });
 

@@ -59,9 +59,10 @@ body{
 .summary_phase{width:469px;float:right;margin-top:75px;margin-left:455px;position:absolute;}
 .summary_word{width:965px;height:525px;margin:0 auto;}
 .summary_word1{width:965px;height:590px;margin:0 auto;}
-.summary_phases{text-indent:20px;line-height:24px;padding-bottom:15px;}
+.summary_phases{text-indent:20px;line-height:20px;padding-bottom:15px;}
 .summary_phases1{text-indent:20px;line-height:21px;padding-bottom:10px;}
 .summary_title{padding-top:75px;margin-left:45px;float:left;line-height:30px;font-weight:normal;}
+.summary_year{font-weight:normal;}
 .summary_name{font-weight:normal;line-height:35px;}
 .summary_name1{font-weight:normal;line-height:36px;}
 .summary_logo{width:150px;height:200px;margin-top:10px;}
@@ -69,9 +70,9 @@ body{
 .detail_guest{height:880px;background:#f5f5f5;overflow:hidden;}
 .speaker_img{background-image:url(../images/content_speake.png);width:49px;height:35px;position:absolute;margin-top:38px;margin-left:45px;}
 .speaker_icon{margin:0 auto;/*width:140px;*/}
-.detail_guest h2{text-align:center;margin-top:12px;margin-bottom:6px;font-weight: normal;}
+.detail_guest p{text-align:center;margin-top:12px;margin-bottom:6px;}
 .pic-person2 {width:965px;margin:0 auto;}
-.pic-person2 li{width:240px;float:left;display:block;text-align:center;padding-top:20px;height:260px;}
+.pic-person2 li{width:240px;float:left;display:block;text-align:center;padding-top:20px;height:258px;}
 .pic-person2 img{width:160px;height:160px;border-radius:100px;margin-top:20px;}
 .pic-person2 span{display:block;}
 .pic-person{width:965px;margin:0 auto;height:580px;overflow:hidden;}
@@ -91,7 +92,7 @@ body{
 .buttom_tj{background:#ff0000;height:65px;width:420px;display:block;margin:0 auto;margin-top:648px;background:#e5e5e5;color:#333333;border:1px solid #cccccc;font-size:18px;}
 .word1{font-size:18px;color:#333333;padding-top:14px;}
 .word2{font-size:15px;color:#aaaaaa;}
-#word6{font-size:35px;color:#333333;text-align:center;display:block;padding-top:18px;font-weight: normal;}
+#word6{font-size:35px;color:#333333;text-align:center;display:block;padding-top:18px;}
 #word61{font-size:35px;color:#333333;display:block;margin:0 auto;margin-top:15px;}
 .partner_company p{font-size:15px;color:#000000;padding-bottom:27px;}
 .font15px{ font-size:15px;}
@@ -103,7 +104,7 @@ body{
 .watching_focus{height:auto;background:#ffffff;width:100%;overflow:hidden;}
 .convention{width:965px;margin:0 auto;left:15%;}
 .convention img{display:block;margin:0 auto;margin-top:108px;}
-.watching_focus h2{text-align:center;font-size:35px;margin-top:16px;color:#333333;font-weight: normal;}
+.watching_focus p{text-align:center;font-size:35px;margin-top:16px;color:#333333;}
 .logo_pic li{width:25%;float:left;display:block;text-align:center;margin-top:-52px;}
 .logo_pic img{border-radius:100px;width:140px;height:140px;}
 .content_images{width:965px;height:282px;}
@@ -123,7 +124,7 @@ body{
 .module_movie .pic_camera{display:block;margin:0 auto;padding-bottom:12px;}
 .detail_movie{width:1250px;height:510px;margin:0 auto;padding-left:14px;}
 .pic_new{position:absolute;margin-top:20px;margin-left:-81px;}
-.detail_partner{width:100%;background:#fff;overflow:hidden;}
+.detail_partner{width:100%;/*height:1350px;*/background:#fff;overflow:hidden;}
 .partner_company{width:1003px;margin:0 auto;}
 .pic_heart{display:block;margin:0 auto;margin-top:120px;}
 .pic_heart1{display:block;margin:0 auto;margin-top:66px;}
@@ -140,8 +141,7 @@ body{
 .word16{display:block;text-align:center;float:left;margin:0 auto;}
 .foot_copyright{width:620px;height:auto;margin:0 auto;padding-top:37px;text-align:center;}
 .control_speake{margin:0 auto;display:block;padding-top:38px;}
-/* 顶部导航 */
-*{margin: 0;padding: 0;font-family:"Lantinghei SC","Microsoft Yahei",Arial,Helvetica,sans-serif;font-size:14px;font-style:normal;}
+*{margin:0;padding:0;font-family:"Lantinghei SC","Microsoft Yahei",Arial,Helvetica,sans-serif;font-size:14px;font-style:normal;}
 li,ul,img,a,div{list-style:none;}
 .ue-bar{background-color:#fff;}
 .ue-nav{background:#111111;}
@@ -158,9 +158,6 @@ li,ul,img,a,div{list-style:none;}
 .ue-lm li a{color:#333333;font-size:15px;display:inline-block;line-height:88px;height:88px;padding-left:17px;padding-right:17px;}
 .ue-lm .active a{background:url(../images/acticity_bg.png);height:88px;color:#fff;}
 .ue-lm li a:hover{background:url(../images/acticity_bg.png);background-repeat:repeat-x;color:#fff;}
-/* 导航结束 */
-
-
 .activity_banner{width:100%;height:316px;}
 .lm_height{width:100%;}
 .content{width:1280px;height:426px;margin:0 auto;margin-top:93px;}
@@ -371,7 +368,7 @@ ul{border:0; margin:0 ; padding:0;}
 .control_select{margin-right:20px;float:right;margin-top:30px;}
 .chakan_btn{width:420px;height:65px;background:#e5e5e5;margin:0 auto;margin-top:-120px;margin-bottom:50px;}
 .chakan_btn span{font-size:18px;color:#333333;display:block;margin:0 auto;height:63px;width:418px;border:1px solid #cccccc;text-align:center;line-height:65px;}
-.nav_mask{width:100%;height:110px;background:url(../images/bottom_bar.png);opacity:0.5;/*z-index:-10;*/margin-top:-110px;position: absolute;}
+.nav_index{width:100%;height:110px;background:url(../images/bottom_bar.png);opacity:0.5;/*z-index:-10;*/margin-top:-110px;position: absolute;}
 .content_meeting{width:1003px;margin:0 auto;background:#fff;cursor:default;}
 .meeting_tab{width:100%;margin:0 auto;height:550px;background:#fff;}
 .date_btn span{width:146px;height:44px;border:2px solid #e5e5e5;font-size:18px;color:#888888;display:block;text-align:center;line-height:44px;margin:0 auto;}

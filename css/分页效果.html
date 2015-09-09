@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jQuery分页演示效果</title>
+<script type="text/javascript" src="http://code.hs-cn.com/jquery/jquery-1.7.1.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	var show_per_page = 5; 
+	var number_of_items = $('#content').children().size();
+	var number_of_pages = Math.ceil(number_of_items/show_per_page);
+	var navigation_html = '<a class="previous_link" href="javascript:previous();">Prev</a>';
+	var current_link = 0;
+	navigation_html += '<a class="next_link" href="javascript:next();">Next</a>';
+});
+function previous(){
+	new_page = parseInt($('#current_page').val()) - 1;
+	if($('.active_page').prev('.page_link').length==true){
+		go_to_page(new_page);
+	}
+}
+function next(){
+	new_page = parseInt($('#current_page').val()) + 1;
+	//if there is an item after the current active link run the function
+	if($('.active_page').next('.page_link').length==true){
+		go_to_page(new_page);
+	}
+}
+function go_to_page(page_num){
+	var show_per_page = parseInt($('#show_per_page').val());
+	start_from = page_num * show_per_page;
+	end_on = start_from + show_per_page;
+	$('#content').children().css('display', 'none').slice(start_from, end_on).css('display', 'block');
+	$('.page_link[longdesc=' + page_num +']').addClass('active_page').siblings('.active_page').removeClass('active_page');
+	$('#current_page').val(page_num);
+}
+</script>
+<style>
+#page_navigation a{
+	padding:3px;
+	border:1px solid gray;
+	margin:2px;
+	color:black;
+	text-decoration:none
+}
+.active_page{
+	background:darkblue;
+	color:white !important;
+}
+</style>
+</head>
+<body>
+	<input type='hidden' id='current_page' />
+	<input type='hidden' id='show_per_page' />
+	<div id='content'>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+		<p>Vestibulum consectetur ipsum sit amet urna euismod imperdiet aliquam urna laoreet.</p>
+		<p>Curabitur a ipsum ut elit porttitor egestas non vitae libero.</p>
+		<p>Pellentesque ac sem ac sem tincidunt euismod.</p>
+		<p>Duis hendrerit purus vitae nibh tincidunt bibendum.</p>
+		<p>Nullam in nisi sit amet velit placerat laoreet.</p>
+		<p>Vestibulum posuere ligula non dolor semper vel facilisis orci ultrices.</p>
+		<p>Donec tincidunt lorem et dolor fringilla ut bibendum lacus fringilla.</p>
+		<p>In non eros eu lacus vestibulum sodales.</p>
+		<p>Duis ultrices metus sit amet sem adipiscing sit amet blandit orci convallis.</p>
+		<p>Proin ullamcorper est vitae lorem mollis bibendum.</p>
+		<p>Maecenas congue fringilla enim, tristique laoreet tortor adipiscing eget.</p>
+		<p>Duis imperdiet metus et lorem venenatis nec porta libero porttitor.</p>
+		<p>Maecenas lacinia lectus ac nulla commodo lacinia.</p>
+		<p>Maecenas quis massa nisl, sed aliquet tortor.</p>
+		<p>Quisque porttitor tellus ut ligula mattis luctus.</p>
+		<p>In at mi dolor, at consectetur risus.</p>
+		<p>Etiam id erat ut lorem fringilla dictum.</p>
+		<p>Curabitur sagittis dolor ac nisi interdum sed posuere tellus commodo.</p>
+		<p>Pellentesque quis magna vitae quam malesuada aliquet.</p>
+		<p>Curabitur tempus tellus quis orci egestas condimentum.</p>
+		<p>Maecenas laoreet eros ac orci adipiscing pharetra.</p>
+
+	</div>
+	<div id='page_navigation'></div><br>
+<br>
+</body>
+</html>

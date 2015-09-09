@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>2015世界互联网大会|填写信息</title>
+    <title>填写信息</title>
     <link type="text/css" rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/zanzhu.css">
@@ -167,26 +167,26 @@ $(function(){
 
 
 
-    // var arr1 = ['一','二','三','四','五','六','七','八','九','十'];
-    // var num=0;
-    //     $(".Lcorner").click(function(){  // add为添加input的id
-    //         num++;
-    //          var divTest = $(this).parent();  //获取div
-    //             if( num< arr1.length){               
-    //                 var newDiv = divTest.clone(true);       
-    //                 divTest.after(newDiv);
-    //                 newDiv.find('.Lcorner').after( '<div class="Rpic icon posA">'+'</div>');
-    //                 $(".Lcorner .nums").each(function(i){                    
-    //                      $(this).html(arr1[i])        
-    //                     $('.personnel:first .Rpic').hide();                            
-    //                })      
-    //                $('.Rpic').click(function(){               
-    //                     $(this).parents('.personnel').hide();           
-    //                 })     
-    //             }else{
-    //                  newDiv = divTest.clone(false);
-    //             }
-    //       })
+    var arr1 = ['一','二','三','四','五','六','七','八','九','十'];
+    var num=0;
+        $(".Lcorner").click(function(){  // add为添加input的id
+            num++;
+             var divTest = $(this).parent();  //获取div
+                if( num< arr1.length){               
+                    var newDiv = divTest.clone(true);       
+                    divTest.after(newDiv);
+                    newDiv.find('.Lcorner').after( '<div class="Rpic icon posA">'+'</div>');
+                    $(".Lcorner .nums").each(function(i){                    
+                         $(this).html(arr1[i])        
+                        $('.personnel:first .Rpic').hide();                            
+                   })      
+                   $('.Rpic').click(function(){               
+                        $(this).parents('.personnel').hide();           
+                    })     
+                }else{
+                     newDiv = divTest.clone(false);
+                }
+          })
 });
 </script>
 </body>

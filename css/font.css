@@ -8,12 +8,12 @@
 .font30px{font-size:30px;}
 .font35px{font-size:35px;}
 /* 页面上用到的颜色 */
-.fbbbbbb{color:#bbb;}
+.fbbbbbb{color:#bbbbbb;}
 .fffffff{background:#fff;}
-.f999999{color:#999;}
-.f000000{color:#000;}
-.f333333{color:#333;}
+.f999999{color:#999999;}
+.f000000{color:#000000;}
+.f333333{color:#333333;}
 .f9a579e{color:#9a579e;}
-.f888888{color:#888;}
+.f888888{color:#888888;}
 /* 控制文本居中问题 */
 .center{text-align:center;}

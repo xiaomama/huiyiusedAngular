@@ -1,30 +1,30 @@
 /* fanlijun bj */
 /* 页面所用到的字体 */
-.font12px{font-size: 12px;}
-.font15px{font-size: 15px;}
-.font16px{font-size: 16px;}
-.font18px{font-size: 18px;}
-.font25px{font-size: 25px;}
-.font30px{font-size: 30px;}
-.font35px{font-size: 35px;}
+.font12px{font-size:12px;}
+.font15px{font-size:15px;}
+.font16px{font-size:16px;}
+.font18px{font-size:18px;}
+.font25px{font-size:25px;}
+.font30px{font-size:30px;}
+.font35px{font-size:35px;}
 /* 页面所用到的颜色 */
-.f670c6d{color: #670c6d;}
-.f333333{color: #333;}
-.f888888{color: #888;}
-.fcdcdcd{color: #cdcdcd;}
-.f9a579e{color: #9a579e;}
-.faaaaaa{color: #aaa;}
-.ff5f5f5{color: #f5f5f5;}
-.fcccccc{color: #ccc;}
-.fe5e5e5{color: #e5e5e5;}
-.fe7495d{color: #e7495d;}
-.ffefefe{color: #fefefe;}
-.feeeeee{color: #eee;}
-.fe7495d{color: #e7495d;}
-.fbbbbbb{color: #bbb;}
-.f111111{color: #111;}
-.fffffff{color: #fff;}
-.f999999{color: #999;}
+.f670c6d{color:#670c6d;}
+.f333333{color:#333333;}
+.f888888{color:#888888;}
+.fcdcdcd{color:#cdcdcd;}
+.f9a579e{color:#9a579e;}
+.faaaaaa{color:#aaaaaa;}
+.ff5f5f5{color:#f5f5f5;}
+.fcccccc{color:#cccccc;}
+.fe5e5e5{color:#e5e5e5;}
+.fe7495d{color:#e7495d;}
+.ffefefe{color:#fefefe;}
+.feeeeee{color:#eeeeee;}
+.fe7495d{color:#e7495d;}
+.fbbbbbb{color:#bbbbbb;}
+.f111111{color:#111111;}
+.fffffff{color:#ffffff;}
+.f999999{color:#999999;}
 /* 相对位置和绝对位置 */
 .posR{position:relative;}
 .posA{position:absolute;}

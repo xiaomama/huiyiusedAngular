@@ -31,14 +31,14 @@
 	"where":"浙江大学校长"	
 	},{
 	"images":"images/yjjb/yj_37.png",
-	"name":"Dimitrios Buhalis",
+	"name":"Mr.Dimitrios Buhalis",
 	"ename":"Professor Dimitrios Buhalis",
 	"ewhere":"Bournemouth University",
 	"where":"英国伯恩茅斯大学旅游学院教授和E旅游实验室主任"	
 	},{
 	"images":"images/yjjb/yj_35.png",
 	"name":"Walter Jamieson",
-	"ename":"Professor Walter Jamieson",
+	"ename":"Mr.Professor Walter Jamieson",
 	"ewhere":"College of Innovation, Thammasat University",
 	"where":"泰国国立法政大学创新学院教授"	
 	},{
@@ -58,18 +58,18 @@
 	"name":"周玲强",
 	"ename":"Professor Lingqiang Zhou",
 	"ewhere":"School of Management,  <br/>Zhejiang University",
-	"where":"浙江大学管理学院教授"	
+	"where":"浙江大学旅游学院院长"	
 	},{
 	"images":"images/yjjb/yj_4.png",
 	"name":"贲圣林",
 	"ename":"Professor Ben Shenglin",
 	"ewhere":"School of Management,  <br/>Zhejiang University",
-	"where":"浙江大学互联网与创新金融<br/>研究中心主任,教授"	
+	"where":"浙江大学互联网与创新金融<br/>研究中心主任"	
 	},{
 	"images":"images/yjjb/yj_30.png",
 	"name":"彭蕾",
-	"ename":"Ms.Lei Peng",
-	"ewhere":"Executive president, Ant King service",
+	"ename":"Mr.Xiaofeng Wang",
+	"ewhere":"Vice-Chairman of China National Tourism Administration",
 	"where":"执行总裁，蚂蚁金服"	
 	},{
 	"images":"images/yjjb/yj_39.png",
@@ -88,18 +88,12 @@
 	"name":"王奕",
 	"ename":"Mr.Kevin Wang",
 	"ewhere":"General Manager of Greater China and North Asia, Google Travel",
-	"where":"Google Travel大中华区<br/>及北亚总经理"	
+	"where":"Google Travel大中华区及北亚总经理"	
 	},{
 	"images":"images/yjjb/yj_43.png",
 	"name":"罗军",
 	"ename":"Mr.Luo Jun",
 	"ewhere":"CEO, tujia.com",
 	"where":"途家网CEO"	
-	},{
-	"images":"images/yjjb/add.png",
-	"name":"添加中",
-	"ename":"To be continuted",
-	"ewhere":"Zhejiang Zhuo Rui",
-	"where":"浙江卓锐"	
 	}]
 }

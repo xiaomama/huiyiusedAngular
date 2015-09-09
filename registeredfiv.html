@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>2015世界互联网大会|常见问题</title>
+    <title>常见问题</title>
     <link type="text/css" rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/zanzhu.css">
@@ -90,9 +90,21 @@
             <tbody>
                 <tr>
                     <td>参会人员</td>
-                    <td id="danjia">2580RMB</td>
-                    <td id="number">2</td>
-                    <td id="price">5160RMB</td>
+                    <td>2580RMB</td>
+                    <td>2</td>
+                    <td>5160RMB</td>
+                </tr>
+                 <tr>
+                    <td>晚宴</td>
+                    <td>600RMB</td>
+                    <td>1</td>
+                    <td>600RMB</td>
+                </tr>
+                <tr>
+                    <td>视频</td>
+                    <td>500RMB</td>
+                    <td>0</td>
+                    <td>0</td>
                 </tr>
             </tbody>
         </table>
@@ -105,21 +117,6 @@
 <script src="js/jquery-1.9.1.min.js"></script>
 <script>
     $('.footer').load("foot.html");
-        $.ajax({
-            type: 'get',
-            url: 'http://101.69.248.150:8001/api/Orders/GetModelById/',
-            dataType: 'json',
-            data: { 
-                id:getParameter('Id')
-            },
-            success: function (data) {
-                console.log(data);
-                $("#price").html(data.Data.TotalPrice);
-                $("#number").html(data.Data.OrderType);
-                $("#danjia").html(data.Data.TotalPrice/data.Data.OrderType);
-            }
-        });
-
 </script>
 </body>
 </html>

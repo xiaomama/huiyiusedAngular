@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
   <meta charset="UTF-8">
-  <title>2015世界互联网大会|演讲嘉宾</title>
+  <title>演讲嘉宾</title>
   <link type="text/css" rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/zanzhu.css">
@@ -21,14 +21,14 @@
       <li><a href="yuhuiqunti1.html">PARTICIPANTS</a></li>
       <li><a href="contact.html">CONTACT US</a></li>
     </ul>
-    <div class="language_list">
-        <i class="select_icon"></i>
-        <label class="select_language">English</label>
-        <ul class="language_bar">
-            <li><a href="../speech.html">中文</a></li>
-            <li id="no-line"><a href="javascript:;">English</a></li>
-        </ul>
-    </div>
+        <div class="language_list">
+            <i class="select_icon"></i>
+               <label class="select_language">English</label>
+               <ul class="language_bar">
+                   <li><a href="../speech.html">中文</a></li>
+                   <li id="no-line"><a href="javascript:;">English</a></li>
+               </ul>
+        </div>
   </div>
 </div>
 <!--顶图-->
@@ -58,7 +58,7 @@
                 html = "";
             $.each(JSON, function(key,obj){
                   html += '<li>'+
-                                        '<a href="javascript:;">'+
+                                        '<a href="#">'+
                                              '<img src="'+ obj.images +'" alt="" >'+
                                              '<span class="word1">'+obj.ename+'</span>'+
                                              '<span class="word2">'+obj.ewhere+'</span>'
